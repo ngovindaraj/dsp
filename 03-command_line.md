@@ -20,22 +20,36 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `pwd`   -  print current working directory path
+    `mkdir` -  create directory
+    `rmdir` -  remove/delete directory
+    `touch` -  create a file
+    `rm`    -  remove/delete file
+    `mv`    -  rename file from one to another
+    `ls -a`    -  list hidden files
+    `cp`    -  copy file/directory from one directory to another
+    `chmod` -  modify permissions
+    `man`   -  manual for any command
+    `grep`  -  search inside files
+    `cat`   -  print contents of whole file
+    `echo`  -  repeat/print whatever comes after the command
+    `awk`   -  
+
+
 
 ---
 
 ### Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls`  
-`ls -a`  
-`ls -l`  
-`ls -lh`  
-`ls -lah`  
-`ls -t`  
-`ls -Glp`  
+`ls`    - list all files in the given directory
+`ls -a` - list all files including hidden files  
+`ls -l` - long format listing
+`ls -lh` - long format and human readable listing  
+`ls -lah` - long format, human readable listing of all files (including those hidden)
+`ls -t`  - list newest files first (timestamp based)
+`ls -Glp` - display colored long format listing, show directories with / in front of name
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
 
 ---
 
@@ -43,7 +57,7 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `ls -lhaFg` - display in long form, human readable, all files including hidden, flag file names, with color coded display
 
 ---
 
@@ -51,7 +65,6 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
- 
-
+> > xargs reads data from stdin and executes the command (given to it as an argument) one or more times based on the input read. Blanks and spaces are treated as delimiters, blank lines are ignored.
+Example: xargs can be used with find and grep. In this case, we find all text files, and filter out those which contain the word 'metis' in them.
+  `find -name '*.txt' | xargs grep 'metis'`
