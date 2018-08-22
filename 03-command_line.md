@@ -26,15 +26,13 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
     `touch` -  create a file
     `rm`    -  remove/delete file
     `mv`    -  rename file from one to another
-    `ls -a`    -  list hidden files
+    `ls -a` -  list hidden files
     `cp`    -  copy file/directory from one directory to another
     `chmod` -  modify permissions
     `man`   -  manual for any command
     `grep`  -  search inside files
     `cat`   -  print contents of whole file
     `echo`  -  repeat/print whatever comes after the command
-    `awk`   -  
-
 
 
 ---
