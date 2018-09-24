@@ -85,25 +85,34 @@ This is a classic example of hypothesis testing using the normal distribution.  
 Bayes' Theorem is an important tool in understanding what we really know, given evidence of other information we have, in a quantitative way.  It helps incorporate conditional probabilities into our conclusions.
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
-
+  
 >> P(Fraternal Twin) = 1/125
-P(Identical Twin) = 1/300
-P(Twin was male | Identical Twin) = 1    (assuming that to be an identical twin, both have to be of the same gender)
-P(Twin was male | Fraternal Twin) = 1/2   (50–50 chance of being male or female)
-P(Identical Twin  | Twin was male)  = ?
-P(Identical Twin  | Twin was male)   =  P(Identical Twin) * P( Twin was male | Identical Twin)    /   P(Twin was male)
-							 =  P(Identical Twin) * P( Twin was male | Identical Twin)   /   P(Identical Twin) * P(Twin was male | Identical Twin) +   P(Fraternal Twin) * P(Twin was male | Fraternal Twin)
-                                                           =  1/300 / (1/300 + (1/125*0.5))  =   0.0033 /   0.0033 + 0.004   = 0.45
-The fact that the question mentions that the twin is male is crucial information and it was a challenge to realize this.
+  
+>> P(Identical Twin) = 1/300
+
+>> P(Twin was male | Identical Twin) = 1    (assuming that to be an identical twin, both have to be of the same gender)
+
+>> P(Twin was male | Fraternal Twin) = 1/2   (50–50 chance of being male or female)
+
+>> P(Identical Twin  | Twin was male)  = ?
+
+>> P(Identical Twin  | Twin was male)   =  P(Identical Twin) * P( Twin was male | Identical Twin)    /   P(Twin was male)
+
+>>                                   =  P(Identical Twin) * P( Twin was male | Identical Twin)   /   P(Identical Twin) * P(Twin was male | Identical Twin) +   P(Fraternal Twin) * P(Twin was male | Fraternal Twin)
+
+>>                                   =  1/300 / (1/300 + (1/125*0.5))  =   0.0033 /   0.0033 + 0.004   = 0.45
+
+>> The fact that the question mentions that the twin is male is crucial information and it was a challenge to realize this.
 ---
 
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
 >> A Frequentist is someone that believes probabilities represent long run frequencies with which events occur. Observed data is a sample which belongs to a larger population.
-Bayesians assign probabilities describing the plausibilities of the possible outcomes for the particular situation, taking into account prior information.
-Source:
-[StackExchange](https://stats.stackexchange.com/questions/22/bayesian-and-frequentist-reasoning-in-plain-english)
+
+>> Bayesians assign probabilities describing the plausibilities of the possible outcomes for the particular situation, taking into account prior information.
+
+>> Source: [StackExchange](https://stats.stackexchange.com/questions/22/bayesian-and-frequentist-reasoning-in-plain-english)
 ---
 
 ## <a name="section-e"></a>5.  Optional Exercises
