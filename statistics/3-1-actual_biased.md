@@ -19,3 +19,4 @@ Mean (Actual)  : 1.0242051550438309
 
 Mean (Biased)  : 2.4036791006642821
 
+![Screenshot](3-1.png)
